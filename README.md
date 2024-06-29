@@ -1,6 +1,6 @@
 # replace-words-lazyvim ⌨️
 This plugin replaces the word under the cursor and changes it throughout the current file.
-It's just using ':%s/word_to_replace/word_that_want_to_replace', though. But I made it more convenient.
+It's just using `:%s/word_to_replace/word_that_want_to_replace`, though. But I made it more convenient.
 
 ## Table of Contents 📖
 - [Demo](#demo) 👨🏻‍💻
@@ -16,13 +16,13 @@ It's just using ':%s/word_to_replace/word_that_want_to_replace', though. But I m
 ## Installation 🛠️
 
 1. Navigate to the directory:
-   cd ~/.config/nvim/lua/plugins
-   touch replace-words.lua
+   `cd ~/.config/nvim/lua/plugins`
+   `touch replace-words.lua`
 
    Then, either copy and paste the code into `replace-words.lua`, or clone/download `replace-words.lua` into the `/plugins` directory.
 
 2. Next, open:
-   nvim ~/.config/nvim/lua/config/lazy.lua
+   `nvim ~/.config/nvim/lua/config/lazy.lua`
 
    Add the following line under the `spec` section in the `lazy.lua` file:
    { import = "plugins.replace-words" },
