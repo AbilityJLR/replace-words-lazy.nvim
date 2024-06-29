@@ -16,7 +16,7 @@ It's just using `:%s/word_to_replace/word_that_want_to_replace`, though. But I m
 ## Installation 🛠️
 
 1. Navigate to the directory:
-   `cd ~/.config/nvim/lua/plugins`
+   `cd ~/.config/nvim/lua/plugins`, And then
    `touch replace-words.lua`
 
    Then, either copy and paste the code into `replace-words.lua`, or clone/download `replace-words.lua` into the `/plugins` directory.
