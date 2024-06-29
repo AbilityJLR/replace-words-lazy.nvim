@@ -3,10 +3,10 @@ This plugin replaces the word under the cursor and changes it throughout the cur
 It's just using `:%s/word_to_replace/word_that_want_to_replace`, though. But I made it more convenient.
 
 ## Table of Contents 📖
-- [Demo](##demo) 👨🏻‍💻
-- [Installation](##installation) 🛠️
-- [Usage](##usage) 🍻
-- [License](##license) ⚖️
+- [Demo](#demo) 👨🏻‍💻
+- [Installation](#installation) 🛠️
+- [Usage](#usage) 🍻
+- [License](#license) ⚖️
 
 ## Demo 👨🏻‍💻
 
