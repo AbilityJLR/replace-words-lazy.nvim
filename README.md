@@ -15,27 +15,16 @@ It's just using `:%s/word_to_replace/word_that_want_to_replace`, though. But I m
 
 ## 🛠️ Installation 
 
-1. Navigate to the directory:<br>
-   `cd ~/.config/nvim/lua/plugins`<br>
-   `touch replace-words.lua`
+   Navigate to the directory:<br>
+   `cd ~/.config/nvim/lua`<br>
+   `touch plugins.lua`
 
-   Then, either copy and paste the code into `replace-words.lua`, or clone/download `replace-words.lua` into the `/plugins` directory.
-
-2. Next, open:
-   `nvim ~/.config/nvim/lua/config/lazy.lua`
-
-   Add the following line under the `spec` section in the `lazy.lua` file:<br>
-   { import = "plugins.replace-words" },
-
-   Ensure your `require("lazy").setup({...})` looks like this:
+   Then, copy and paste the code into `plugins.lua` :
    ```
-   require("lazy").setup({
-     spec = {
-       { import = "plugins.replace-words" },
-       -- Other entries if present
-     }
-   })
-   ```
+   return {
+    { "AbilityJLR/replace-words-lazyvim" }
+   }
+```
    
 ## 🍻 Usage 
 
