@@ -19,18 +19,19 @@ It's just using `:%s/word_to_replace/word_that_want_to_replace`, though. But I m
    `cd ~/.config/nvim/lua`<br>
    `touch plugins.lua`
 
-   Then, copy and paste the code into `plugins.lua` :
+   Then, copy 
    ```
    return {
     { "AbilityJLR/replace-words-lazyvim" }
    }
-```
+   ```
+   and paste the code into `plugins.lua`
    
 ## 🍻 Usage 
 
 Press `<leader>cw` in normal mode over the word that you want to change.
-Alternatively, you can modify this line at the very bottom of the `/plugins/replace-words.lua` file:
 
+Alternatively, you can modify this line at the very bottom of the `/lua/replace-words.lua` file:
 `vim.keymap.set("n", "<leader>cw", function()` to change any key you want.
 
 ## ⚖️ License 
