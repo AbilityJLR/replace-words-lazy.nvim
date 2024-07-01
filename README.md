@@ -1,4 +1,4 @@
-# ⌨️ replace-words-lazyvim
+# ⚡️ replace-words-lazyvim
 This plugin replaces the word under the cursor and changes it throughout the current file.
 It's just using `:%s/word_to_replace/word_that_want_to_replace`, though. But I made it more convenient.
 
@@ -27,7 +27,7 @@ It's just using `:%s/word_to_replace/word_that_want_to_replace`, though. But I m
    ```
    and paste the code into `plugins.lua`
    
-## 🍻 Usage 
+## 🚀 Usage 
 
 Press `<leader>cw` in normal mode over the word that you want to change.
 
