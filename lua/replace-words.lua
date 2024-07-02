@@ -1,8 +1,8 @@
 local M = {}
 
 local function create_input_window(prompt, word_to_replace)
-    local width = 50
-    local height = 3
+    local width = 40
+    local height = 1
     local buf = vim.api.nvim_create_buf(false, true)
     
     -- Get cursor position
@@ -13,8 +13,8 @@ local function create_input_window(prompt, word_to_replace)
     -- Adjust position to be visible
     local win_height = vim.api.nvim_win_get_height(0)
     local win_width = vim.api.nvim_win_get_width(0)
-    if row - 4 < 0 then
-        row = 4
+    if row - 2 < 0 then
+        row = 2
     end
     if col + width > win_width then
         col = win_width - width
@@ -22,7 +22,7 @@ local function create_input_window(prompt, word_to_replace)
     
     local win = vim.api.nvim_open_win(buf, true, {
         relative = "cursor",
-        row = -4,
+        row = -3,
         col = 0,
         width = width,
         height = height,
@@ -38,7 +38,7 @@ local function create_input_window(prompt, word_to_replace)
             {"│", "FloatBorder"},
         },
         title = string.format(" Replace all '%s' with ", word_to_replace),
-        title_pos = "center",
+        title_pos = "left",
     })
     
     vim.api.nvim_buf_set_option(buf, "buftype", "prompt")
