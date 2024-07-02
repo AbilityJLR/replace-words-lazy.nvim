@@ -27,7 +27,7 @@ It's just using `:%s/word_to_replace/word_that_want_to_replace`, though. But I m
          - Copy the bash code below
            
             ```
-               echo'return { { "AbilityJLR/replace-words-lazy.nvim" } }' > ~/.config/nvim/lua/plugins/replace-words/init.lua
+               mkdir -p ~/.config/nvim/lua/plugins/replace-words && echo 'return { { "AbilityJLR/replace-words-lazy.nvim" } }' > ~/.config/nvim/lua/plugins/replace-words/init.lua
             ```
          - Paste it into your terminal
          - Press Enter
