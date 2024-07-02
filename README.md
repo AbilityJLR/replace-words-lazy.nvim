@@ -17,7 +17,7 @@ It's just using `:%s/word_to_replace/word_that_want_to_replace`, though. But I m
 
 ## 👨🏻‍💻 Demo 
 
-![replace-demo](https://github.com/AbilityJLR/replace-words-lazyvim/assets/71693169/f7b95e9f-b44f-4017-833c-12c069ae6af7)
+![demo2](https://github.com/AbilityJLR/replace-words-lazy.nvim/assets/71693169/48e15ab9-6c28-47fc-91a6-aacfc23544d4)
 
 ## 🛠️ Installation 
 
