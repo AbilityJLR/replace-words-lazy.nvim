@@ -27,7 +27,7 @@ It's just using `:%s/word_to_replace/word_that_want_to_replace`, though. But I m
          - Copy the bash code below
            
             ```
-               mkdir -p ~/.config/nvim/lua && echo 'return { { "AbilityJLR/replace-words-lazy.nvim" } }' > ~/.config/nvim/lua/plugins.lua
+               echo'return { { "AbilityJLR/replace-words-lazy.nvim" } }' > ~/.config/nvim/lua/plugins/replace-words/init.lua
             ```
          - Paste it into your terminal
          - Press Enter
@@ -36,9 +36,11 @@ It's just using `:%s/word_to_replace/word_that_want_to_replace`, though. But I m
    
    2. Install Manually<br>
       Navigate to the directory:<br>
-   `cd ~/.config/nvim/lua`<br>
-   Create the `plugins.lua` file:<br>
-   `touch plugins.lua`
+   `cd ~/.config/nvim/lua/plugins`<br>
+   Create the `replace-words` folder:<br>
+   `mkdir replace-words`<br>
+   Create the `init.lua` file:<br>
+   `touch replace-words/init.lua`
       Then, copy
       
       ```
@@ -46,7 +48,7 @@ It's just using `:%s/word_to_replace/word_that_want_to_replace`, though. But I m
           { "AbilityJLR/replace-words-lazy.nvim" }
          }
       ```
-      and paste the code into `plugins.lua`
+      and paste the code into `replace-words/init.lua`
    
 ## 🚀 Usage 
 
