@@ -20,18 +20,33 @@ It's just using `:%s/word_to_replace/word_that_want_to_replace`, though. But I m
 ![demo2](https://github.com/AbilityJLR/replace-words-lazy.nvim/assets/71693169/48e15ab9-6c28-47fc-91a6-aacfc23544d4)
 
 ## 🛠️ Installation 
-
-   Navigate to the directory:<br>
+   ### ⚠️ Use just one of the following methods:
+   
+   1. Install with Bash Script
+         - Open the terminal
+         - Copy the bash code below
+           
+            ```
+               mkdir -p ~/.config/nvim/lua && echo 'return { { "AbilityJLR/replace-words-lazy.nvim" } }' > ~/.config/nvim/lua/plugins.lua
+            ```
+         - Paste it into your terminal
+         - Press Enter
+           
+   ### Or Alternatively
+   
+   2. Install Manually<br>
+      Navigate to the directory:<br>
    `cd ~/.config/nvim/lua`<br>
+   Create the `plugins.lua` file:<br>
    `touch plugins.lua`
-
-   Then, copy 
-   ```
-   return {
-    { "AbilityJLR/replace-words-lazy.nvim" }
-   }
-   ```
-   and paste the code into `plugins.lua`
+      Then, copy
+      
+      ```
+         return {
+          { "AbilityJLR/replace-words-lazy.nvim" }
+         }
+      ```
+      and paste the code into `plugins.lua`
    
 ## 🚀 Usage 
 
