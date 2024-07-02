@@ -28,7 +28,7 @@ It's just using `:%s/word_to_replace/word_that_want_to_replace`, though. But I m
    Then, copy 
    ```
    return {
-    { "AbilityJLR/replace-words-lazyvim" }
+    { "AbilityJLR/replace-words-nvim" }
    }
    ```
    and paste the code into `plugins.lua`
