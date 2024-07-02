@@ -1,11 +1,13 @@
-local function create_input_window(prompt, title)
+local M = {}
+
+local function create_input_window(prompt)
     local width = 40
     local height = 1
     local buf = vim.api.nvim_create_buf(false, true)
 
     -- Get cursor position
     local cursor = vim.api.nvim_win_get_cursor(0)
-    local row = cursor[1]
+    local row = cursor[1] -- row is 1-indexed here, but we'll position the window above it
     local col = cursor[2]
 
     -- Adjust position to be visible
@@ -19,32 +21,15 @@ local function create_input_window(prompt, title)
         col = win_width - width
     end
 
-    -- Build the top border with title
-    local top_border
-    if title and title ~= "" then
-        local title_with_space = " " .. title .. " "
-        top_border = "╭" .. title_with_space .. string.rep("─", width - #title_with_space) .. "╮"
-    else
-        top_border = "╭" .. string.rep("─", width) .. "╮"
-    end
-
     local win = vim.api.nvim_open_win(buf, true, {
         relative = "cursor",
-        row = -3,
+        row = -3, -- position the input window just above the cursor's line
         col = 0,
         width = width,
         height = height,
         style = "minimal",
-        border = {
-            {top_border, "FloatBorder"},
-            {"│", "FloatBorder"},
-            {"╰", "FloatBorder"},
-            {string.rep("─", width), "FloatBorder"},
-            {"╯", "FloatBorder"},
-            {"│", "FloatBorder"},
-        },
+        border = "rounded",
     })
-    
     vim.api.nvim_buf_set_option(buf, "buftype", "prompt")
     vim.fn.prompt_setprompt(buf, prompt)
 
@@ -61,9 +46,9 @@ local function create_input_window(prompt, title)
     return buf, win
 end
 
-local function get_input(prompt, title)
+local function get_input(prompt)
     local co = coroutine.running()
-    local buf, win = create_input_window(prompt, title)
+    local buf, win = create_input_window(prompt)
     local result = nil
 
     vim.fn.prompt_setcallback(buf, function(text)
@@ -82,9 +67,10 @@ end
 
 local function replace_words()
     local word_to_replace = get_word_under_cursor()
-    local replacement = get_input("Replace all '" .. word_to_replace .. "' with: ", "Replace Word")
+    local replacement = get_input("Replace all '" .. word_to_replace .. "' with: ")
 
     if replacement and replacement ~= "" then
+        -- Perform substitution using :s command
         vim.cmd(string.format("%%s/\\<%s\\>/%s/g", word_to_replace, replacement))
         print(word_to_replace, replacement)
     end
