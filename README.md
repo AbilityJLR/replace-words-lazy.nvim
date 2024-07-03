@@ -2,12 +2,12 @@
 This plugin replaces the word under the cursor and changes it throughout the current file.
 It's just using `:%s/word_to_replace/word_that_want_to_replace`, though. But I made it more convenient.
 
-![watchers](https://custom-icon-badges.demolab.com/github/watchers/abilityjlr/replace-words-lazyvim?logo=eye&style=social&logoColor=black)
-![](https://custom-icon-badges.demolab.com/github/stars/abilityjlr/replace-words-lazyvim?logo=star&style=social&logoColor=black)
-![license](https://custom-icon-badges.demolab.com/github/license/abilityjlr/replace-words-lazyvim?logo=law&logoColor=white)
-![](https://custom-icon-badges.demolab.com/github/issues-pr-closed/abilityjlr/replace-words-lazyvim?color=purple&logo=git-pull-request&logoColor=white)
-![](https://custom-icon-badges.demolab.com/github/issues-raw/abilityjlr/replace-words-lazyvim?logo=issue)
-![](https://custom-icon-badges.demolab.com/github/v/tag/abilityjlr/replace-words-lazyvim?logo=tag&logoColor=white)
+![watchers](https://custom-icon-badges.demolab.com/github/watchers/AbilityJLR/replace-words-lazyvim?logo=eye&style=social&logoColor=black)
+![](https://custom-icon-badges.demolab.com/github/stars/AbilityJLR/replace-words-lazyvim?logo=star&style=social&logoColor=black)
+![license](https://custom-icon-badges.demolab.com/github/license/AbilityJLR/replace-words-lazyvim?logo=law&logoColor=white)
+![](https://custom-icon-badges.demolab.com/github/issues-pr-closed/AbilityJLR/replace-words-lazyvim?color=purple&logo=git-pull-request&logoColor=white)
+![](https://custom-icon-badges.demolab.com/github/issues-raw/AbilityJLR/replace-words-lazyvim?logo=issue)
+![](https://custom-icon-badges.demolab.com/github/v/tag/AbilityJLR/replace-words-lazyvim?logo=tag&logoColor=white)
 
 ## 📖 Table of Contents 
 - [Demo](#demo) 👨🏻‍💻
